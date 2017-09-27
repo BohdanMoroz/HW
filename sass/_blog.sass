@@ -1,9 +1,11 @@
 .blog
 	height: 5000px
-	width: 73.8%
+	// width: 73.8%
+	width: 100%
+	
 	// background-color: blue
-	float: left
-	// margin-top: -47px 
+	// float: left
+	// margin-top: -47px
 
 .h1
 	text-transform: uppercase
@@ -49,10 +51,22 @@
 .post
 	// height: 900px
 	// margin-top: 47px
-	clear: both
+	// clear: both
+	margin-right: 26.3%
+	// float: left
+	
+	+md
+		margin-right: 0
+
+	&__is-first
+		margin-top: 0
+		margin-right: 26.3%
+		
+		+md
+			margin-right: 26.3%
 
 	&__icon
-		width: 73px
+		width: 9.93%
 		height: auto
 		float: left
 		
@@ -147,9 +161,6 @@
 	float: left
 	margin-left: 5%
 	padding-top: 17px
-		
-.is-first
-	margin-top: 0
 
 .exp
 	text-decoration: none
@@ -159,8 +170,9 @@
 		text-decoration: underline
 		
 .underline
-	width: 87.28%
-	margin-left: 11.4%
+	// width: 87.28%
+	margin-left: 8.4%
+	margin-right: 27.3%
 	height: 14px
 	background-image: url("../img/underline.png")
 	clear: both
