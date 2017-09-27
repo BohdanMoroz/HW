@@ -1,0 +1,51 @@
+.sidebar
+
+	height: 500px
+	width: 21.3%
+	// background-color: green
+	float: right
+	overflow: hidden
+	
+	&__menu
+		clear: both
+		list-style: none
+		margin-top: 8px
+		margin-bottom: 37px
+		
+		&__item
+			margin-bottom: -4px
+
+		&__link
+			text-decoration: none
+			font-family: "HelveticaNeue Medium", sans-serif
+			font-size: 11px
+			color: #464646
+			// line-height: -5px 
+			
+			&:hover
+				text-decoration: underline
+				
+.rightline
+	margin-top: 4px
+	margin-bottom: 15px
+	height: 14px
+	background-image: url("../img/underline.png")
+	// float: right
+	
+	&__article
+		margin-left: 43% 
+		// width: 90%
+		
+	&__categories
+		margin-left: 40%
+
+	&__photos
+		margin-left: 50%
+		
+.grid
+	padding-top: 3px
+	display: grid
+	grid-template-areas: "grid-item grid-item grid-item grid-item" "grid-item grid-item grid-item grid-item"
+	grid-row-gap: 3px
+	grid-column-gap: 3px
+		
