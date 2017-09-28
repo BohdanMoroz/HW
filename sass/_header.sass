@@ -7,7 +7,7 @@
 	
 	+md
 		padding-left: 19px
-		padding-right: 19px  
+		padding-right: 19px
 	
 .logo
 	float: left
@@ -22,10 +22,26 @@
 	&--light
 		color: #f3b09e
 		// color: black
+		
+.menu__btn
+	visibility: hidden
+	width: 1px
+	height: auto
+
+	
+	+sm
+		width: 35px 
+		height: auto
+		visibility: visible
+		margin-top: 22px
+		float: right
 	
 .nav
 	float: right
 	list-style: none
+	
+	+sm
+		visibility: hidden
 	
 	&__item
 		float: left
@@ -34,6 +50,9 @@
 		
 		+md
 			margin-left: 50px
+			
+		+sm
+			margin-top: -20px
 		
 	&__link
 		text-decoration: none
