@@ -8,6 +8,9 @@
 	+md
 		padding-left: 19px
 		padding-right: 19px
+		
+	+sm
+		height: 50px
 	
 .logo
 	float: left
@@ -19,40 +22,46 @@
 	margin-top: 12px
 	letter-spacing: 1.5px
 	
+	+sm
+		font-size: 36px
+	
 	&--light
 		color: #f3b09e
 		// color: black
-		
-.menu__btn
-	visibility: hidden
-	width: 1px
-	height: auto
-
-	
-	+sm
-		width: 35px 
-		height: auto
-		visibility: visible
-		margin-top: 22px
-		float: right
 	
 .nav
 	float: right
 	list-style: none
 	
 	+sm
-		visibility: hidden
+		display: none
+		float: none
+		position: absolute
+		margin-top: 45px
+		width: 100%
+		margin-bottom: 1000px
 	
 	&__item
 		float: left
 		margin-top: 30px
 		margin-left: 27px
 		
+		&:hover
+			background-color: #FFE19C
+		
 		+md
 			margin-left: 50px
 			
 		+sm
-			margin-top: -20px
+			// position: relative
+			float: none
+			margin-top: 0
+			margin-left: -17px
+			text-align: center
+			// background-color: #fff
+			padding-top: 4px
+			padding-bottom: 4px
+			// margin-top: -20px
 		
 	&__link
 		text-decoration: none
@@ -62,6 +71,25 @@
 		
 		&:hover
 			text-decoration: underline
+			
+
+.burger
+	display: none
+	width: 1px
+	height: auto
+	background-image: url("../../img/burger.png")
+	background-repeat: no-repeat
+	-webkit-background-size: contain
+	-o-background-size: contain
+	background-size: contain
+
+	+sm
+		width: 25px 
+		height: 25px
+		display: block
+		margin-top: 17px
+		float: right
+		background-color: transparent
 		
 .is-active
 	color: #e8603c
